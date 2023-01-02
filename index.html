@@ -5,9 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Sign-Up Form</title>
 </head>
 <body>
+    <div class="container">
+        <section class="left">
+            <div class="block">
+                <img class="logo" src="./images/logo.png" alt="logo">
+                <span class="title">ODINPUNK</span>
+            </div>
+        </section>
+        <section class="right">
+            <header>
+                <p class="head">Welcome to the city of ODIN!</p>
+                <p class="body">ODINPUNK is a 2D sidescrolling adventure game inspired by Altered Carbon & Bladerunner. Develop a detailed character with numerous specialties and customization. Claim your character below to get started.</p>
+                <p class="CTA">The City Of ODIN awaits..</p>
+            </header>
+            <section class="form">
+                <p>Create Your Account</p>
+                <form>
+                    <legend>Enter Your Account Information Below.</legend>
+                    <div class="row">
+                        <div class="field">
+                            <label for="first_name">First Name</label>
+                            <input type="text" name="first_name" id="first_name" placeholder="Jon" required>
+                        </div>
+                        <div class="field">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" name="last_name" id="last_name" placeholder="Kovacs" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="field">
+                            <label for="email">Email Address</label>
+                            <input type="email" name="email" id="email" placeholder="j-kovacs@altered.comf" required>
+                        </div>
+                        <div class="field">
+                            <label for="phone">Phone Number</label>
+                            <input type="number" name="number" id="number" placeholder="(999)999-9999" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="field">
+                            <label for="password">Password</label>
+                            <input id="password" type="password" name="password" required>
+                        </div>
+                        <div class="field">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input id="confirmPassword" type="password" name="confirmPassword" required>
+                            <span class="fieldMsg"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button id="submit">Submit</button>
+                    </div>
+                </form>
+                <div class="login">
+                    <p>Already have a Acount? <a href="#">Log In</a></p>
+                </div>
+            </section>
+        </section>
+    </div>
     
 </body>
 </html>
